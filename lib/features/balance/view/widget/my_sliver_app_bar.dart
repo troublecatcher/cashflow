@@ -16,7 +16,6 @@ class MySliverAppBar extends SliverPersistentHeaderDelegate {
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
     final collapsePercent = 1 - shrinkOffset / expandedHeight;
-    print(collapsePercent);
     return BlocBuilder<MoneyFlowCubit, List<MoneyFlow>>(
       builder: (context, state) {
         final income = state
